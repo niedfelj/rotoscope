@@ -103,6 +103,7 @@ class Rotoscope
         call_stack.pop if call_stack.last == caller
       end
     end
+    puts "Rotoscope#flatten_into: #{call_stack.size} unpoped frames on call_stack"
   end
 
   def short_log_path
